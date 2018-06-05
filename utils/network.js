@@ -19,7 +19,7 @@ function requestLoading(url, params, message, success, fail) {
     url: url,
     data: params,
     header: {
-      'Content-Type': 'application/json'
+      'content-type': 'application/json'
       //'content-type': 'application/x-www-form-urlencoded'
     },
     method: 'post',

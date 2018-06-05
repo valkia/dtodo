@@ -9,5 +9,7 @@
   </view>
   <view class="usermotto">
     <text class="user-motto" bindtap='gotoTodoList'>{{motto}}</text>
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>
   </view>
 </view>
