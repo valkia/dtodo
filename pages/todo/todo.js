@@ -15,7 +15,7 @@ Page({
 
   },
   getList: function () {
-    network.requestLoading(app.url + "getList", this.data.params, '正在加载数据', function (res) {
+    network.requestLoading(app.url + "task/getList", this.data.params, '正在加载数据', function (res) {
       //res就是我们请求接口返回的数据
       console.log(res)
 
@@ -38,7 +38,7 @@ Page({
   },
   
   onLoad: function () {
-    this.login()
+    this.getList()
   }
 })
 // 作者：Code4Android
